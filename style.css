@@ -1,0 +1,368 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+/* Hero Section Background */
+.hero-section {
+    background: url('your-banner-image.jpg') no-repeat center center/cover;
+    height: 400px; /* Aap height adjust kar sakte hain */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #D4AF37; /* Gold color for luxury look */
+}
+
+/* Dark overlay taaki text clear dikhe */
+.overlay {
+    background: rgba(0, 0, 0, 0.6); 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.shlok { font-size: 1.2rem; margin-bottom: 0; }
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 20px auto 0;
+    font-weight: 500;
+    border-top: 1px solid rgba(212, 175, 55, 0.3);
+    padding-top: 15px;
+}
+
+/* Explore Button Style */
+.button-wrapper {
+    text-align: center;
+    margin-top: -25px; /* Button ko header se overlap karne ke liye */
+    position: relative;
+    z-index: 10;
+}
+
+.explore-btn {
+    padding: 12px 30px;
+    background: #fff;
+    border: 2px solid #D4AF37;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+    background: #D4AF37;
+    color: white;
+}
+.about {
+  padding: 60px 20px;
+  background: #f5f7fa;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.about-image img {
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.about-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #243b55;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.about-btn:hover {
+  background: #141e30;
+}
+
+.hero-section {
+  height: 100vh;
+  background-image: url('images/shop.jpg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section h1 {
+  color: rgb(241, 239, 239);
+  font-size: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap');
+
+.premium-collection {
+    padding: 100px 5%;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Section Heading Style */
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+    color: #bfa37e; /* Muted Gold */
+    display: block;
+    margin-bottom: 10px;
+}
+
+.main-heading {
+    font-family: 'Playfair Display', serif; /* Classic Luxury Font */
+    font-size: 3rem;
+    color: #1a1a1a;
+    font-weight: 400;
+}
+
+.gold-divider {
+    width: 60px;
+    height: 2px;
+    background: #bfa37e;
+    margin: 20px auto;
+}
+
+/* Grid Layout */
+.luxury-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+/* Card Luxury Styling */
+.luxury-card {
+    position: relative;
+    background: #fff;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.image-box {
+    position: relative;
+    overflow: hidden;
+    height: 450px;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.2s ease;
+}
+
+.luxury-card:hover .image-box img {
+    transform: scale(1.08); /* Slow elegant zoom */
+}
+
+/* Hover Overlay */
+.hover-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.luxury-card:hover .hover-overlay {
+    opacity: 1;
+}
+.custom-box-btn, .link-btn {
+    display: inline-block;      /* Size set karne ke liye zaroori */
+    padding: 10px 25px;         /* Button ke andar ki space */
+    background-color: #D4AF37;  /* Gold background */
+    color: white;               /* Text color */
+    text-decoration: none;      /* Link ka underline hatane ke liye */
+    border-radius: 5px;         /* Corners ko round karne ke liye */
+    cursor: pointer;            /* Mouse le jaane par 'hath' wala icon dikhega */
+    border: none;
+    font-weight: bold;
+    transition: 0.3s;           /* Animation effect ke liye */
+}
+
+/* Hover Effect (Jab mouse upar jaye) */
+.custom-box-btn:hover {
+    background-color: #b8952e;  /* Rang thoda dark ho jayega */
+    transform: scale(1.05);     /* Button thoda bada dikhega */
+}
+
+.quick-view {
+    padding: 12px 25px;
+    background: white;
+    border: none;
+    color: #1a1a1a;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Details Styling */
+.luxury-details {
+    padding: 25px 0;
+    text-align: left;
+}
+
+.luxury-details h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #1a1a1a;
+}
+
+.category {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.premium-price {
+    font-size: 1.2rem;
+    color: #bfa37e;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.whatsapp-link {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-bottom: 1px solid #bfa37e;
+    padding-bottom: 4px;
+    transition: 0.3s;
+}
+
+.whatsapp-link:hover {
+    color: #bfa37e;
+    border-bottom: 1px solid #1a1a1a;
+}
+.gallery {
+  padding: 40px;
+  text-align: center;
+}
+
+.gallery h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery-container img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.05);
+}
+.reviews {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+}
+
+.reviews h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.review-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  width: 280px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.review-card:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+.review-card p {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.stars {
+  color: gold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.review-card h4 {
+  color: #ddd;
+}
+.card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+footer {
+  margin-top: 20px;
+}
